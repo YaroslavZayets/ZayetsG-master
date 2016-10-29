@@ -1,0 +1,50 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <data>
+        <variable
+            name="user"
+            type="fcdk.zayetsgram.data.User">
+        </variable>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center"
+        android:url = "@{user.profile_picture}"/>
+
+    <TextView
+        android:text="@{user.full_name +' ' + user.username}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="@{user.bio}"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</layout>
